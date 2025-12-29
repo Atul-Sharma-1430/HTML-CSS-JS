@@ -1,0 +1,8 @@
+Step 1 :- config/db.js
+
+Step 2 : - models/Users.js
+
+Step 3 : - router/userRouter.js
+
+Step 4 : - server.js
+

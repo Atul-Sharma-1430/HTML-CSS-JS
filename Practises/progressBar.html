@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Progress Bar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .progress_container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 25px;
+      width: 250px;
+      background-color: blanchedalmond;
+      border: 3px solid black;
+      border-radius: 8px;
+      overflow: hidden; /* ensures the bar stays inside */
+    }
+
+    .progress_bar {
+      background-color: rgb(255, 0, 183);
+      width: 2.5px;
+      height: 100%;
+      border-radius: 5px;
+      animation: StatusBar 4s ease-in-out infinite;
+    }
+
+    @keyframes StatusBar {
+      0% { width: 0%; }
+      90% { width: 70%; }
+      100% { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress_container">
+    <div class="progress_bar"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clocl</title>
+</head>
+<body>
+    <h1>0 : 0 : 0</h1>
+    
+</body>
+<script>
+    function ChangeTime() {
+        const now = new Date(); //Date Object
+        const hours = now.getHours(); // Hour of that Onbject
+        const minutes = now.getMinutes();// Minute of that Onbject
+        const seconds = now.getSeconds();// Second of that Onbject
+        document.querySelector('h1').textContent = `${hours}:${minutes}:${seconds}`;
+    }
+    ChangeTime(); // Initial call to display time immediately
+    
+    setInterval(ChangeTime, 1000); // Call the function every second
+</script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <h1>0 : 0 : 0</h1>
+    <div>
+      <button onclick="start()">Start</button>
+      <button onclick="stop()">Stop</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+  </body>
+  <script>
+    let hrs = 0;
+    let mins = 0;
+    let secs = 0;
+    let interval = null;
+
+    function changeTime() {
+      document.querySelector(
+        "h1"
+      ).textContent = `${hrs} : ${mins} : ${secs}`;
+    }
+
+    function start() {
+      if (!interval) {
+        interval = setInterval(() => {
+          secs++;
+          if (secs === 60) {
+            mins++;
+            secs = 0;
+          }
+          if (mins === 60) {
+            hrs++;
+            mins = 0;
+          }
+          changeTime();
+        }, 1000);
+      }
+    }
+
+    function stop() {
+      clearInterval(interval);
+      interval = null;
+    }
+
+    function reset() {
+      hrs = 0;
+      mins = 0;
+      secs = 0;
+      changeTime();
+      stop();
+    }
+  </script>
+</html>

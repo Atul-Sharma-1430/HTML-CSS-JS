@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        border: black 5px solid;
+        background-color: Yellow;
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        font-weight: bolder;
+        margin: 10px;
+        animation: movingAside 3s ease-in-out 0s infinite alternate;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @keyframes movingAside {
+        from {
+          left: 100px;
+        }
+        to {
+          left: 1000px;
+        }
+      }
+
+      #hello1 {
+        animation: movingAside 3s ease-in-out 0s infinite alternate-reverse;
+      }
+      #hello3 {
+        animation: movingAside 3s ease-in-out 0s infinite alternate-reverse;
+      }
+      .box:hover {
+        transform: scale(1.2);
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="hello" class="box">Animate</div>
+
+    <div id="hello1" class="box">Animate</div>
+
+    <div id="hello2" class="box">Animate</div>
+
+    <div id="hello3" class="box">Animate</div>
+
+    <div id="hello4" class="box">Animate</div>
+  </body>
+</html>

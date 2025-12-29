@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Live user count -->
+    <h1>Live User Count:- <span>0</span></h1>
+
+    <!-- Messages will appear here -->
+    <div id="message-box"><h1>Messages</h1></div>
+
+    <!-- Chat input area (hidden until login) -->
+    <div id="chat-box">
+      <h2>Chat Box</h2>
+      <input
+        type="text"
+        id="message-input"
+        onfocus="startTyping()"
+        onblur="stopTyping()"
+        placeholder="Type your message here..."
+      />
+
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <!-- Login form -->
+    <div id="login-box">
+      <h1>Login</h1>
+      <input type="text" id="username" placeholder="Enter your username" />
+      <button onclick="joinChat()">Join the Chat</button>
+    </div>
+
+    <!-- Socket.io client library -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+let a = "Atul";
+
+function changeName() {
+    console.log("2 Your name before :- " ,a);
+    let a = "Rahul";
+    console.log("3 Your name after :- " ,a);
+}
+
+console.log("1 Your name before :- ",a);
+changeName();
+console.log("4 Your name after  - ", a);
+
