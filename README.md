@@ -1,0 +1,1 @@
+This repository contains practice and learning files for HTML, CSS, and JavaScript.
