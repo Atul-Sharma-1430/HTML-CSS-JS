@@ -22,16 +22,4 @@ getPromise(1)
     return getPromise(3);
   });
 
-// This iterates over the index for-in
-console.log("For-in loop");
-let array = [1, 2, 3, 4, 5];
-for (const num in array) {
-  console.log(num * num);
-}
 
-console.log("for-of loop");
-// for-of iterates over the values
-let array2 = [1, 2, 3, 4, 5];
-for (const num of array2) {
-  console.log(num * num);
-}

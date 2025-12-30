@@ -1,0 +1,73 @@
+// ========================
+// MOUSE EVENTS
+// ========================
+// click        - when an element is clicked
+// dblclick     - double click
+// mousedown    - mouse button pressed
+// mouseup      - mouse button released
+// mousemove    - mouse moves over an element
+// mouseover    - mouse enters an element
+// mouseout     - mouse leaves an element
+// mouseenter   - mouse enters an element (doesn’t bubble)
+// mouseleave   - mouse leaves an element (doesn’t bubble)
+// contextmenu  - right-click menu
+
+// ========================
+// KEYBOARD EVENTS
+// ========================
+// keydown      - key pressed down
+// keyup        - key released
+// keypress     - key pressed (deprecated)
+
+// ========================
+// FORM EVENTS
+// ========================
+// focus        - element gains focus
+// blur         - element loses focus
+// change       - input value changed
+// input        - input value changes live
+// submit       - form submitted
+// reset        - form reset
+
+// ========================
+// WINDOW / DOCUMENT EVENTS
+// ========================
+// load         - page fully loaded
+// resize       - window resized
+// scroll       - window or element scrolled
+// unload       - page unloaded
+// beforeunload - before leaving page
+// error        - runtime error
+
+// ========================
+// CLIPBOARD EVENTS
+// ========================
+// copy         - content copied
+// cut          - content cut
+// paste        - content pasted
+
+// ========================
+// DRAG & DROP EVENTS
+// ========================
+// drag         - element being dragged
+// dragstart    - drag starts
+// dragend      - drag ends
+// dragover     - dragged over target
+// dragenter    - dragged into target
+// dragleave    - dragged out of target
+// drop         - element dropped
+
+// ========================
+// TOUCH EVENTS (MOBILE)
+// ========================
+// touchstart   - finger touches screen
+// touchmove    - finger moves on screen
+// touchend     - finger lifted
+// touchcancel  - touch interrupted
+
+// ========================
+// OTHER USEFUL EVENTS
+// ========================
+// animationstart, animationend, animationiteration - CSS animations
+// transitionstart, transitionend                   - CSS transitions
+// pointerdown, pointerup, pointermove             - pointer device events

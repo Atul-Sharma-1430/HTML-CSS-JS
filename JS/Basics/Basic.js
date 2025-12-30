@@ -30,3 +30,18 @@ console.log(num);
 console.log(name);
 console.log(float);
 console.log(char);
+
+
+
+// BigInt conversion
+let bigInt = 103224119609997990n;
+let normNum = 42;
+
+let B2N = Number(bigInt);    // BigInt → Number
+let N2B = BigInt(normNum);   // Number → BigInt
+
+console.log(`BigInt to normal number conversion: ${B2N}`); 
+console.log(`Normal number to BigInt conversion: ${N2B}`); 
+
+
+

@@ -1,0 +1,3 @@
+Whats is Top-Level-Await..?
+==> Top-level await in JavaScript means you can use the await keyword outside of an async function, directly at the top level of a file.
+    It lets you write asynchronous code that looks synchronous, without wrapping everything in an async function.
