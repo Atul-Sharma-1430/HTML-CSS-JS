@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="size.css" />
+    <title>Size Units</title>
+    <style>
+      /* Using % */
+      .box {
+        border: 2px solid white;
+        margin: 3px;
+      }
+
+      .parent {
+        background-color: yellow;
+        border: 1px solid green;
+        width: 60%;
+      }
+
+      .child {
+        background-color: red;
+        width: 50%;
+      }
+
+      /* Using vh and vw */
+      .container {
+        margin: 0;
+        pad: 0;
+        height: 50vh;
+        width: 50vw;
+        background-color: yellow;
+        color: black;
+      }
+
+      /* Using px */
+      .box {
+        border: 2px solid red;
+        color: black;
+        height: 100px;
+        width: 100px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: rgb(230, 226, 190);
+      }
+
+      /* Using em */
+      .wrapper {
+        font-size: 1em;
+      }
+      .px {
+        width: 200px;
+      }
+
+      .vw {
+        width: 20vw;
+      }
+
+      .em {
+        /* 10 em means 160px cz default 1 em size is 16px */
+        width: 10em;
+      }
+
+      .containerNew {
+        font-size: 10px;
+        background-color: yellow;
+      }
+
+      .boxNew {
+        /* Here 10 em means 100px cz now we have given the size of parent as 10px so it takes the 10 * 10 = 100px of parent */
+        font-size: 10em;
+      }
+
+      /* Using rem */
+      .firstPara {
+        border: 1px solid rgb(235, 0, 0);
+        /* 2rem = 16px*/
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Using % for size -->
+    <!-- <div class="parent">
+      <div class="child">Child</div>
+    </div> -->
+
+    <!-- Using vh and vw -->
+    <!-- <div class="container">Hello</div> -->
+
+    <!-- Using px -->
+    <!-- 1px = 1/96 of an inch -->
+    <!-- ppi = pixels per inch -->
+    <!-- <div class="box">Box</div> -->
+
+    <!-- Using em -->
+    <!-- em depends on immediate parent -->
+    <!-- <div class="wrapper">
+      <div class="box px">200px</div>
+      <div class="box vw">20vw</div>
+      <div class="box em">10em = 160px</div>
+    </div> -->
+    <!-- <div class="containerNew">
+      <div class="boxNew">Welcome</div>
+    </div> -->
+
+    <!-- Using rem -->
+    <!-- rem depends on root element ie HTML tag ke basis pe-->
+    <p class="firstPara">Hello</p>
+  </body>
+</html>

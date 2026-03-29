@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="positions.css" />
+    <title>Positions</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        border: 10px solid Black;
+        padding: 5px;
+        height: 2000px;
+      }
+
+      .box {
+        height: 1500px;
+        width: 100px;
+        background-color: blue;
+        top: 1500px;
+      }
+
+      img {
+        height: 300px;
+        margin: 5px;
+      }
+
+      /* Relative means jaha pe normally rhega us jagah ke compare me */
+      /* us image ka gap khali chhod diya jaayga isme  */
+      #image2 {
+        position: relative;
+        top: 50px;
+      }
+
+      /* Generally used for overlapping */
+      /* Gap maintain nhi hota us image ke liye */
+      /* Relative to its Closes Positioned Ancestor */
+      #image3 {
+        box-sizing: border-box;
+        border: 5px solid red;
+        position: absolute;
+        top: 300px;
+      }
+
+      #image4 {
+        position: fixed;
+      }
+
+      /*Jaise hi parent div khatam hota hai, wo element bhi scroll ho jata hai */
+      /* Bas apne parent container ke andar hii stickey behaviour show krt hai */
+      #image1 {
+        position: sticky;
+        top: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="image1" src="imgone.jpg" alt="Image 1" />
+      <img id="image2" src="imgtwo.jpg" alt="Image 2" />
+      <img id="image3" src="imgthree.jpg" alt="Image 3" />
+      <img id="image4" src="imgfour.jpg" alt="Image 4" />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

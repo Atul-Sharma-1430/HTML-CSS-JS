@@ -1,0 +1,68 @@
+/* Keyword value */
+/* Removes any shadow */
+box-shadow: none;
+
+/* A color and two length values */
+/* offset-x | offset-y | color */
+box-shadow: red 60px -16px;
+/* 60px → moves shadow to the right
+   -16px → moves shadow upward
+   red → shadow color */
+
+/* Three length values and a color */
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+/* 10px → right
+   5px → down
+   5px → blur amount (higher = softer shadow)
+   black → color */
+
+/* Four length values and a color */
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+/* 2px → right
+   2px → down
+   2px → blur
+   1px → spread (increases size of shadow)
+   rgba color → semi-transparent black */
+
+/* inset, length values, and a color */
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
+/* inset → shadow goes inside the element
+   5em → right (inside)
+   1em → down (inside)
+   gold → color */
+
+/* Multiple shadows, separated by commas */
+/* Each shadow follows same rules */
+box-shadow:
+  3px 3px red inset,
+  -1em 0 0.4em olive;
+/* First shadow:
+   3px → right
+   3px → down
+   red → color
+   inset → inner shadow
+
+   Second shadow:
+   -1em → left
+   0 → no vertical movement
+   0.4em → blur
+   olive → color */
+
+/* Global values */
+/* Inherits value from parent */
+box-shadow: inherit;
+
+/* Resets to default (no shadow) */
+box-shadow: initial;
+
+/* Reverts to browser/user stylesheet */
+box-shadow: revert;
+
+/* Reverts within current cascade layer */
+box-shadow: revert-layer;
+
+/* Removes value (acts like inherit or initial depending on context) */
+box-shadow: unset;

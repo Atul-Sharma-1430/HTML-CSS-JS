@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        border: 2px solid black;
+        background-color: cyan;
+      }
+      .box {
+        height: 50px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin-top: 1px;
+        position: relative;
+        background-color: #000000;
+        /* animation-name: move-right;
+        animation-iteration-count: infinite;
+        animation-duration: 5s; */
+
+        /* animation-timing-function: linear; Speed constant rhegi */
+        /* animation-timing-function: ease-in;     St me slow for tej */
+        /* animation-timing-function: ease-out;    last me slow */
+        /* animation-timing-function: ease-in-out; ease-in-out: starts slow, speeds up in middle, ends slow */
+        /* animation-timing-function: ease;        Default smooth motio */
+        /* animation-delay: 3ms;                   Ye animation start hone se pehle kitni der wait karegi define karta hai */
+
+        /* Syntax: cubic-bezier(x1, y1, x2, y2)  */
+        /* animation-timing-function: cubic-bezier(0.075, -0.3, 0.165, 1); */
+
+        /* animation-direction: alternate;          Left to right and right to left dono dikhega*/
+        /* animation-direction: alternate-reverse;  Same uper wale jaisa but ulte direction se */
+        /* animation-direction: normal;             Normal */
+
+        /* Ye control karta hai ki animation ke end ya start ke baad element ka style kaisa rahe. */
+        /* animation-fill-mode: forwards;  → animation ke end hone ke baad element LAST keyframe ke style me rahega */
+        /* animation-fill-mode: backwards; → animation ke delay ke dauran element FIRST keyframe ke style me rahega */
+
+        /* animation-play-state: paused; animation abhi ruk gaya hai and jab tak hover rhega tb tak chalega */
+
+        /* Shorthand Notation */
+        /* 5s             → duration: animation kitni der chalegi (5 seconds) */
+        /* ease            → timing-function: speed curve, starts slow → fast → ends slow */
+        /* 0s              → delay: animation start hone se pehle 0 second wait karegi */
+        /* alternate-reverse → direction: odd iterations reverse me chalegi, even normal, alternate motion */
+        /* both            → fill-mode: start me first frame, end me last frame apply rahega */
+        /* running          → play-state: animation initially rukhi nahi rahegi */
+        animation: 3s ease-in-out 0s infinite alternate both running move-right;
+      }
+
+      /* .box:hover {
+        animation-play-state: running; hover pe animation start
+      }  */
+
+      @keyframes move-right {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(1233px);
+        }
+      }
+
+      .box2 {
+        height: 50px;
+        width: 300px;
+        border: 1px solid black;
+        border-radius: 8px;
+        position: relative;
+        background-color: #000000;
+        animation: 3s ease-in-out 0s infinite alternate running move-left;
+      }
+
+      @keyframes move-left {
+        from {
+          left: 1233px; /*left property define karti hai: element ka left edge container ke left edge se kitna door hai*/
+          top: 725px;
+        }
+        to {
+          left: 0;
+          top: 725px;
+        }
+      }
+
+      .box3 {
+        height: 70px;
+        width: 30px;
+        background-color: yellow;
+        top: 50px;
+        right: 1350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+    </div>
+  </body>
+</html>

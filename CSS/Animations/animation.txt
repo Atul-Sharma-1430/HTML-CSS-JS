@@ -1,0 +1,93 @@
+CSS Animation Timing Functions (Speed Curves)
+
+1. Basic Keyword Values
+
+ease
+
+* Default value
+* Slow start → fast middle → slow end
+
+linear
+
+* Constant speed (no acceleration)
+
+ease-in
+
+* Starts slow → speeds up
+
+ease-out
+
+* Starts fast → slows down
+
+ease-in-out
+
+* Slow start → fast → slow end
+
+2. Cubic Bezier (Custom Curves)
+
+Syntax:
+cubic-bezier(x1, y1, x2, y2)
+
+Example:
+cubic-bezier(0.68, -0.55, 0.27, 1.55)
+
+Notes:
+
+* Allows full control over animation speed curve
+* Can create bounce, elastic, or sharp effects
+
+3. Steps (Discrete Animation)
+
+steps(n)
+
+* Breaks animation into n steps (no smooth transition)
+
+steps(n, start)
+
+* Jump happens at the beginning of each step
+
+steps(n, end)
+
+* Jump happens at the end (default behavior)
+
+Example:
+steps(4)
+steps(4, start)
+steps(4, end)
+
+4. Step Shortcuts
+
+step-start
+
+* Same as steps(1, start)
+* Immediate jump at start
+
+step-end
+
+* Same as steps(1, end)
+* Jump at the end
+
+5. Multiple Values
+
+You can define multiple timing functions for multiple animations:
+
+Example:
+ease, linear, ease-in
+
+6. Quick Summary
+
+linear       → constant speed
+ease         → smooth default motion
+ease-in      → slow start
+ease-out     → slow end
+ease-in-out  → smooth both sides
+steps()      → jump-based animation
+cubic-bezier → custom curve
+
+7. Common Usage Tips
+
+* Use "ease" for general UI animations
+* Use "ease-in-out" for smoother transitions
+* Use "linear" for loaders or continuous motion
+* Use "cubic-bezier()" for advanced/custom effects
+* Use "steps()" for sprite or frame-based animations

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --main-color: #3498db;
+        --accent-color: rgb(255, 0, 0);
+        --soft-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .container {
+        background-color: grey;
+        height: 700px;
+        border: 2px solid red;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Adding Box Shadows */
+      .box {
+        background-color: rgba(219, 55, 71, 0.5);
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        /* align-self: center; Works along cross axis */
+        border: 2px solid rgb(0, 0, 0);
+
+        /*  X    Y    Color*/
+        /* box-shadow: 60px 30px rgb(78, 195, 102); */
+
+        /*    X     Y    blur  Color*/
+        /* box-shadow: -5px -5px 20px orange ; */
+
+        /*    X     Y    blur  blr-rad  Color*/
+        /* box-shadow: 10px 10px 25px 40px rgba(15, 255, 144, 0.7); */
+
+        /* inset se shadow andar side aa jaata hai and positive negative side ulta ho jaata hai*/
+        /* box-shadow: inset -10px -10px 25px rgb(124, 51, 193); */
+
+        /* Multiple Shadows */
+        /* box-shadow:
+          inset 10px 10px 30px 10px rgb(44, 182, 136),
+          inset -20px -20px var(--main-color),
+          inset 30px 30px rgb(30, 9, 9),
+          inset -40px -40px rgb(179, 182, 24);
+          */
+      }
+
+      /* Adding Text Shadow */
+      #head {
+        color: yellow;
+        /* All Syntax are valid */
+        /* text-shadow: 10px 10px 10px rgb(147, 183, 29); */
+        /* text-shadow: yellow 10px 10px 3px; */
+        /* text-shadow: rgb(107, 28, 28) 12px 16px; */
+        /* text-shadow: 12px 14px; */
+        /* Multiple Text Shadow */
+        text-shadow:
+          10px 10px red,
+          20px 20px blue,
+          30px 30px green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="image.png" alt="" />
+        <h1 id="head">Hello from Atul</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste natus
+          error sed beatae nesciunt molestiae? Quidem voluptates eveniet
+          asperiores alias?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
