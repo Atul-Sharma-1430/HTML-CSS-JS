@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        height: 400px;
+        width: 400px;
+        background-color: beige;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*Yaha pe hum all generally rakhte hai but width yaha pe ye bta rha hai ki hover krne pe width pe bas transition lagega and iska jo color hai vo bas hover ki wajh se change hoga transition ki wajh se nhi. Agar all rakhte tab uska color bhi dheere dheere change hota*/
+        /* transition-property: all;  */
+        /* transition-duration: 1s;
+        transition-delay: 0s;
+        transition-timing-function: ease; */
+
+        /* Shorthand Notation */
+        /* transition: all 2s; */
+        /* transition: all 2s 1s; */
+        /* transition: all 2s ease-out; */
+        transition: all 2s ease-out 0s;
+        /* transition:
+          width 2s ease-in 1s,
+          height 5s ease-out 0s; */
+      }
+
+      .box:hover {
+        width: 600px;
+        height: 600px;
+        border-radius: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        border: 15px solid rgb(0, 255, 195);
+        cursor: pointer;
+        color: rgb(255, 86, 35);
+        font-size: 100px;
+        text-shadow: 10px 10px 25px aliceblue;
+        box-shadow: 10px 10px 15px rgb(0, 255, 195);
+        background-color: rgb(11, 8, 64);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">Atul Sharma</div>
+  </body>
+</html>
