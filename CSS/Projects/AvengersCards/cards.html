@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cards.css" />
+    <title>CARDS</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="card-container">
+          <section class="card active">
+            <div class="image">
+              <img src="images/thor.png" />
+            </div>
+            <h2>Thor</h2>
+            <p>
+              God of Thunder, protector of Asgard and Earth, known for his
+              immense strength and bravery.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="image">
+              <img src="images/ironman.png" />
+            </div>
+            <h2>Iron Man</h2>
+            <p>
+              Genius billionaire Tony Stark who fights evil using his advanced
+              armored suit and technology.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="image">
+              <img src="images/spiderman.png" />
+            </div>
+            <h2>Spider-Man</h2>
+            <p>
+              Friendly neighborhood hero with spider-like abilities, known for
+              his agility and responsibility.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="image">
+              <img src="images/captain.png" />
+            </div>
+            <h2>Captain America</h2>
+            <p>
+              Super soldier and leader of the Avengers, symbol of courage,
+              honor, and justice.
+            </p>
+          </section>
+
+          <section class="card">
+            <div class="image">
+              <img src="images/captainmarvel.png" />
+            </div>
+            <h2>Captain Marvel</h2>
+            <p>One of the most powerful heroes with cosmic energy abilities.</p>
+          </section>
+
+          <section class="card">
+            <div class="image">
+              <img src="images/strange.png" />
+            </div>
+            <h2>Doctor Strange</h2>
+            <p>
+              Master of the mystic arts who protects reality from dark forces.
+            </p>
+          </section>
+
+          v
+          <section class="card">
+            <div class="image">
+              <img src="images/hulk.png" />
+            </div>
+            <h2>Hulk</h2>
+            <p>A massive green powerhouse driven by rage and strength.</p>
+          </section>
+
+          <section class="card">
+            <div class="image">
+              <img src="images/hawkeye.png" />
+            </div>
+            <h2>Hawkeye</h2>
+            <p>
+              Expert marksman with unmatched precision using his bow and arrows.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script>
+      const cards = document.querySelectorAll(".card");
+      let index = 0;
+
+      setInterval(() => {
+        cards[index].classList.remove("active");
+
+        index = (index + 1) % cards.length;
+
+        cards[index].classList.add("active");
+      }, 4000);
+    </script>
+  </body>
+</html>
