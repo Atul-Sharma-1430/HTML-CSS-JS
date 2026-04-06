@@ -16,6 +16,33 @@
   align-items: center;
 }
 
+.heading {
+  position: absolute;
+  top: 3rem;
+  margin: auto;
+  color: white;
+  font-size: 60px;
+  background-color: #1a1a1a9c;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgba(104, 19, 19, 0.6);
+  transition: all 1.5s ease;
+
+  border: 3px solid transparent;
+}
+
+.heading:hover {
+  transform: scale(1.08);
+  outline: 3px solid rgba(255, 0, 0, 0.447);
+  color: rgba(255, 0, 0, 0.447);
+}
+
 .card-container {
   height: 520px;
   width: 620px;
@@ -121,12 +148,16 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   padding: 5px;
+  border: 3px solid transparent;
   border-radius: 10px;
 
   letter-spacing: 1.5px;
 
   color: white;
   box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 
   text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
 
@@ -134,8 +165,7 @@ h2 {
 }
 
 h2:hover {
-  border: 3px solid rgba(255, 0, 0, 0.447);
-  border-radius: 10px;
+  outline: 3px solid rgba(255, 0, 0, 0.447);
 }
 
 p {
@@ -146,6 +176,9 @@ p {
 
   padding: 8px 12px;
   border-radius: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 
   background: rgba(255, 255, 255, 0.05);
 }
